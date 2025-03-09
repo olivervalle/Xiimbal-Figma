@@ -271,16 +271,20 @@ const TravelApp: React.FC = () => {
 
           <div className="w-full h-48 px-4 flex justify-center items-center">
             <div className="w-full h-48 relative bg-black rounded-xl overflow-hidden">
-              <img
-                src="https://storage.googleapis.com/tempo-public-images/figma-exports%2Fgithub%7C64444939-1741481394375-node-1%3A130-1741481393786.png"
-                alt="Museum promotion"
+              <video
                 className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/30 flex justify-center items-center">
-                <div className="grow shrink basis-0 self-stretch pl-[25px] pr-[21px] py-5 bg-white/30 rounded-full flex justify-end items-center">
-                  <ChevronRight className="w-[18px] h-6 text-white" />
-                </div>
-              </div>
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              >
+                <source
+                  src="https://xiimbal.s3.us-central-1.wasabisys.com/waCs3iCvcFad6R06ADCtO8xHAJH2_1739403168109.mp4?AWSAccessKeyId=IV4VEGXIH64DX78HVUT4&Expires=3789763522&Signature=RQv9%2B90tN%2BhDug%2FywAsKKFWw0BE%3D"
+                  type="video/mp4"
+                />
+                Tu navegador no soporta el elemento de video.
+              </video>
             </div>
           </div>
         </div>
