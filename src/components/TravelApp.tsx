@@ -246,7 +246,7 @@ const TravelApp: React.FC = () => {
 
         {/* Museums Section */}
         <div className="w-full flex flex-col justify-start items-start">
-          <SectionHeader title="Top 10 museos" />
+          <SectionHeader title="Top 10 Museos" />
 
           <div className="w-full h-[212px] pl-4 pr-2 flex items-start gap-4 overflow-x-auto scrollbar-hide">
             <PlaceCard
