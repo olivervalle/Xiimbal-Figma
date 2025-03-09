@@ -70,7 +70,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ title }) => (
     <div className="text-white text-xl font-bold font-inter leading-tight">
       {title}
     </div>
-    <div className="py-0.5 flex justify-end items-center">
+    <div className="flex justify-end items-center px-4 py-0.5">
       <div className="text-center text-[#ff00d4] text-sm font-normal font-inter">
         Ver todos
       </div>
