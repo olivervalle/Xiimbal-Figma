@@ -216,16 +216,20 @@ const TravelApp: React.FC = () => {
 
           <div className="w-full h-48 px-4 flex justify-center items-center">
             <div className="w-full h-48 relative bg-black rounded-xl overflow-hidden">
-              <img
-                src="https://storage.googleapis.com/tempo-public-images/figma-exports%2Fgithub%7C64444939-1741481390469-node-1%3A123-1741481389910.png"
-                alt="Restaurant promotion"
+              <video
                 className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/30 flex justify-center items-center">
-                <div className="grow shrink basis-0 self-stretch pl-[25px] pr-[21px] py-5 bg-white/30 rounded-full flex justify-end items-center">
-                  <ChevronRight className="w-[18px] h-6 text-white" />
-                </div>
-              </div>
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source
+                  src="https://xiimbal.s3.us-central-1.wasabisys.com/waCs3iCvcFad6R06ADCtO8xHAJH2_1739403190728.mp4?AWSAccessKeyId=IV4VEGXIH64DX78HVUT4&Expires=3789763550&Signature=VLjoGozMVBU8OCUOMiDHol6NJjU%3D"
+                  type="video/mp4"
+                />
+                Tu navegador no soporta el elemento de video.
+              </video>
             </div>
           </div>
         </div>
@@ -326,7 +330,7 @@ const TravelApp: React.FC = () => {
               playsInline
             >
               <source
-                src="https://xiimbal.s3.us-central-1.wasabisys.com/waCs3iCvcFad6R06ADCtO8xHAJH2_1739403113188.mp4?AWSAccessKeyId=IV4VEGXIH64DX78HVUT4&Expires=3789763466&Signature=OAEeqtTNOmjo45T1Lz%2Bam3hd0BA%3D"
+                src="https://xiimbal.s3.us-central-1.wasabisys.com/waCs3iCvcFad6R06ADCtO8xHAJH2_1739403053644.mp4?AWSAccessKeyId=IV4VEGXIH64DX78HVUT4&Expires=3789763411&Signature=XohnFfq%2BGq75F0QNfB0NWbYqq6c%3D"
                 type="video/mp4"
               />
               Tu navegador no soporta el elemento de video.
@@ -369,13 +373,20 @@ const TravelApp: React.FC = () => {
             </div>
           </div>
 
-          <div className="self-stretch h-24 px-4 flex justify-center items-center">
+          <div className="self-stretch flex flex-col gap-4 px-4">
             <EventCard
               day="15"
               month="MAR"
               title="Noche de Trova Yucateca"
               location="Centro Histórico de Mérida"
               time="19:00 - 22:00"
+            />
+            <EventCard
+              day="20"
+              month="MAR"
+              title="Festival Gastronómico Maya"
+              location="Parque de Santa Lucía"
+              time="16:00 - 23:00"
             />
           </div>
         </div>
