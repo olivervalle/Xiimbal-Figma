@@ -316,6 +316,29 @@ const TravelApp: React.FC = () => {
         <div className="self-stretch flex flex-col justify-center items-start gap-3">
           <SectionHeader title="Top 10 Playas" />
 
+          <div className="w-full px-4 mb-4">
+            <video
+              className="w-full h-48 rounded-xl object-cover"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source
+                src="https://xiimbal.s3.us-central-1.wasabisys.com/waCs3iCvcFad6R06ADCtO8xHAJH2_1739403113188.mp4?AWSAccessKeyId=IV4VEGXIH64DX78HVUT4&Expires=3789763466&Signature=OAEeqtTNOmjo45T1Lz%2Bam3hd0BA%3D"
+                type="video/mp4"
+              />
+              Tu navegador no soporta el elemento de video.
+            </video>
+            <div className="mt-2 text-white text-base font-medium font-inter">
+              Descubre las playas de Yucatán
+            </div>
+            <div className="text-gray-400 text-xs font-normal font-inter">
+              Un recorrido por los mejores destinos costeros
+            </div>
+          </div>
+
           <div className="w-full h-[212px] pl-4 pr-2 flex items-start gap-4 overflow-x-auto scrollbar-hide">
             <PlaceCard
               image="https://storage.googleapis.com/tempo-public-images/figma-exports%2Fgithub%7C64444939-1741481399535-node-1%3A192-1741481398842.png"
