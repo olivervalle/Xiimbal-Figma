@@ -14,16 +14,26 @@ interface CategoryProps {
   label: string;
 }
 
-const Category: React.FC<CategoryProps> = ({ icon, label }) => (
-  <div className="flex-1 flex flex-col items-center gap-[9px] pb-px">
-    <div className="w-14 h-14 rounded-full bg-[#ff00d4]/10 flex justify-center items-center">
-      {icon}
+const Category: React.FC<CategoryProps> = ({ icon, label }) => {
+  const handleClick = () => {
+    alert(`Categoría seleccionada: ${label}`);
+    // Aquí puedes agregar cualquier acción que desees realizar
+  };
+
+  return (
+    <div className="flex-1 flex flex-col items-center gap-[9px] pb-px">
+      <div
+        className="w-14 h-14 rounded-full bg-[#ff00d4]/10 flex justify-center items-center cursor-pointer hover:bg-[#ff00d4]/20 transition-colors"
+        onClick={handleClick}
+      >
+        {icon}
+      </div>
+      <div className="text-white text-xs font-normal font-inter leading-3 text-center">
+        {label}
+      </div>
     </div>
-    <div className="text-white text-xs font-normal font-inter leading-3 text-center">
-      {label}
-    </div>
-  </div>
-);
+  );
+};
 
 interface PlaceCardProps {
   image: string;
